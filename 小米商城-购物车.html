@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE = edge">
+		<meta name="viewport" content="width = device-width, intial-scale = 1, maximum-scale = 1, user-scalable = none">
+		<meta name="author" content="Weldon">
+		<title>购物车</title>
+		<link rel="stylesheet" type="text/css" href="框架/css/bootstrap.min.css"/>
+		<style type="text/css">
+			body
+			{
+				margin: 0;
+				font-family: "微软雅黑";
+			}
+			#all
+			{
+				padding: 0;
+			}
+			#all>header
+			{
+				/*height: 4rem;*/
+				background-color: #333;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				color: white;
+				font-size: 1.5rem;
+				letter-spacing: 1rem;
+				width: 100%;
+				font-family: "微软雅黑";
+			}
+			
+			.nothing
+			{
+				height: 5rem;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			.nothing span
+			{
+				color: gray;
+			}
+			
+			.nothing span:nth-of-type(2)
+			{
+				margin-left: 1rem;
+				color: black;
+			}
+			.guess header
+			{
+				display: flex;
+				align-items: baseline;
+				background-color: lightblue;
+				justify-content: center;
+				
+			}
+			.guess header span
+			{
+				color:gray
+			}
+			.header_part p
+			{
+				margin: 0;
+				padding: 0;
+			}
+			.guess p
+			{
+				margin: 1rem;
+			}
+			.guess .content
+			{
+				display: flex;
+				flex-wrap: wrap;
+			}
+			.guess figure
+			{
+				width: calc(100% / 2 - 1rem);
+				/*background-color: red;*/
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+			.guess img
+			{
+				width: 100%;
+			}
+			.guess figcaption
+			{
+				margin: 1rem;
+				margin-bottom: 1.5rem;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+			.guess span
+			{
+				color: red;
+			}
+			#all header img
+			{
+				width: 2rem;
+				margin: 1rem;
+				filter:invert(1);
+			}
+		</style>
+
+	</head>
+
+	<body>
+		
+		<section class="col-lg-4 col-xs-12" id="all">
+			<header class="header_part">
+				
+				<a href="小米商城.html">
+					<img src="我的信息图标/左箭头 (1).png" alt="" />
+				</a>
+				<p>购物车</p>
+				<a href="小米商城-搜索.html">
+					<img src="我的信息图标/放大镜.png"/>
+				</a>
+			</header>
+			
+			<section class="nothing">
+				<span>购物车还是空的</span>
+				<a href="小米商城.html">去逛逛</a>
+			</section>
+			
+			<section class="guess">
+				<header>
+					<span>——————————</span>
+					<p>猜你喜欢</p>
+					<span>——————————</span>
+				</header>
+				
+				<section class="content">
+					<figure>
+						<img src="20161118162129/cms_14666526940268_qwleg.jpg" />
+						<figcaption>
+							<p>红米手机3s</p>
+							<span>￥899</span>
+						</figcaption>
+					</figure>
+
+					<figure>
+						<img src="20161118162129/cms_14779138361113_tpbtv.jpg" />
+						<figcaption>
+							<p>小米Note2</p>
+							<span>￥2799</span>
+						</figcaption>
+					</figure>
+					<figure>
+						<img src="20161118162129/cms_14786726906931_xfxvo.jpg" />
+						<figcaption>
+							<p>小米MIX</p>
+							<span>￥3499</span>
+						</figcaption>
+					</figure>
+					<figure>
+						<img src="20161118162129/cms_14758931126256_zwyqs.jpg" />
+						<figcaption>
+							<p>小米5s</p>
+							<span>￥1999</span>
+						</figcaption>
+					</figure>
+					<figure>
+						<img src="20161118162129/mi5dhy.jpg" />
+						<figcaption>
+							<p>小米手机5</p>
+							<span>￥2399</span>
+						</figcaption>
+					</figure>
+					<figure>
+						<img src="20161118162129/cms_14758931126256_zwyqs.jpg" />
+						<figcaption>
+							<p>小米5s Plus</p>
+							<span>￥1999</span>
+						</figcaption>
+					</figure>
+					<figure>
+						<img src="20161118162129/t1k2zjb4dv1rxrhcrk.jpg" />
+						<figcaption>
+							<p>小米Max</p>
+							<span>￥1799</span>
+						</figcaption>
+					</figure>
+				</section>
+				
+				
+			</section>
+		</section>
+		<script src="框架/js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="框架/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

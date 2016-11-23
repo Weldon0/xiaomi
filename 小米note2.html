@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE = edge">
+		<meta name="viewport" content="width = device-width, intial-scale = 1, maximum-scale = 1, user-scalable = none">
+		<meta name="author" content="Weldon">
+		<title>小米note2</title>
+		<link rel="stylesheet" type="text/css" href="框架/css/bootstrap.min.css"/>
+		<style>
+			html, body
+			{
+				height: 100%;
+			}
+			#all
+			{
+				padding: 0;
+				background-color: whitesmoke;
+				height: 100%;
+			}
+			#all header
+			{
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				background-color: #333;
+			}
+			#all header span
+			{
+				color: white;
+				letter-spacing: 1rem;
+			}
+			#all header img
+			{
+				width: 2rem;
+				margin: 1rem;
+				filter: invert(1);
+			}
+			article ul
+			{
+				display: flex;
+				flex-direction: column;
+			}
+			article ul li img
+			{
+				width: 50%;
+				height: auto;
+				margin: 1rem auto 1rem auto;
+			}
+			article ul li
+			{
+				margin-top: 2rem;
+				/*border: 1px solid gray;*/
+				/*background-color: rgb(255,255,243);*/
+				background-color: white;
+			}
+			article ul li a
+			{
+				display: flex;
+				justify-content: flex-start;
+			}
+			article ul li a div:nth-of-type(1)
+			{
+				width: 40%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				
+			}
+			article ul li a div:nth-of-type(2)
+			{
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+			}
+			del
+			{
+				color: gray;
+				margin-left: 1rem;
+			}
+			.red_color
+			{
+				color: red;
+			}
+			article span
+			{
+				color: #333;
+				line-height: 3rem;
+			}
+			.banner
+			{
+				width: 100%;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<section class="col-lg-4 col-xs-12 content_part" id="all">
+				<header class="header_part">
+
+					<a href="小米商城.html">
+					<img src="我的信息图标/左箭头 (1).png" alt="" />
+				</a>
+				<span>商品列表</span>
+				<a href="小米商城-搜索.html">
+					<img src="我的信息图标/放大镜.png"/>
+				</a>
+				</header>
+				<img class="banner" src="小米手机5资源/h-8.jpg"/>
+				
+				<article>
+					<ul class="list-unstyled">
+						<li><a href="小米5白色标准版购买页面.html">
+							<div><img src="小米手机5资源/note2_0.jpg"/></div>
+							<div>
+								<span>小米note2 4GB + 64GB</span>
+								<span class="red_color">1599元<del>1799元</del></span>
+								
+							</div>
+						</a></li>
+						<li><a href="小米5白色标准版购买页面.html">
+							<div><img src="小米手机5资源/note2_0.jpg"/></div>
+							<div>
+								<span>小米note2 4GB + 128GB</span>
+								<span class="red_color">1799元<del>2099元</del></span>
+								
+							</div>
+						</a></li>
+						<li><a href="小米5白色标准版购买页面.html">
+							<div><img src="小米手机5资源/note2_0.jpg"/></div>
+							<div>
+								<span>小米note2全球版 6GB+128GB</span>
+								<span class="red_color">1799元<del>2099元</del></span>
+							</div>
+						</a></li>
+						
+					</ul>
+				</article>
+		</section>
+		
+		<script src="框架/js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="框架/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

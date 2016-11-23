@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE = edge">
+		<meta name="viewport" content="width = device-width, intial-scale = 1, maximum-scale = 1, user-scalable = none">
+		<meta name="author" content="Weldon">
+		<title>搜索框</title>
+		<link rel="stylesheet" type="text/css" href="框架/css/bootstrap.min.css"/>
+		<style type="text/css">
+			body
+			{
+				margin: 0;
+			}
+			#all
+			{
+				padding: 0;
+			}
+			#all header
+			{
+				display: flex;
+				background-color: #333;
+				align-items: center;
+				/*margin-top: 1rem;*/
+				
+			}
+			#all header img
+			{
+				width: 2rem;
+				margin: 1rem;
+				filter:invert(1);
+			}
+			.content
+			{
+				display: flex;
+				flex-direction: column;
+				flex-wrap: wrap;
+			}
+			.content div
+			{
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+			}
+			.content a
+			{
+				/*background-color: darkorange;*/
+				margin: 1rem;
+				padding: 0.5rem 1rem 0.5rem 1rem;
+				border: 1px solid #333;
+			}
+			.content a:hover
+			{
+				color: orange;
+			}
+			.bgcolor
+			{
+				background-color: #333;
+				color: white;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<section class="col-lg-4 col-xs-12" id="all">
+				<header class="header_part">
+
+					<a href="小米商城.html">
+						<img src="我的信息图标/回到首页.png" alt="" />
+					</a>
+					<input type="search" class="form-control" name="" id="" value="" />
+					<a href="#">
+						<img src="我的信息图标/放大镜.png" />
+					</a>
+				</header>
+				
+				<section class="content">
+					<div id="">
+						<a href="#" class="bgcolor">小米Mix</a>
+						<a href="#" class="bgcolor">红米4超长续航</a>
+						<a href="#" class="bgcolor">智能电饭煲</a>
+					</div>
+					<div>
+						<a href="#">小米5S</a>
+						<a href="#">笔记本</a>
+						<a href="#">小米智能电视3s</a>
+						<a href="#">亮黑色米5现货</a>
+					</div>
+				</section>
+			</section>
+		</header>
+		<script src="框架/js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="框架/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

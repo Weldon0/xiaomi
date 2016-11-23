@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE = edge">
+		<meta name="viewport" content="width = device-width, intial-scale = 1, maximum-scale = 1, user-scalable = none">
+		<meta name="author" content="Weldon">
+		<title>我的信息</title>
+		<link rel="stylesheet" type="text/css" href="框架/css/bootstrap.min.css"/>
+		<style type="text/css">
+			body
+			{
+				margin: 0;
+				font-family: "微软雅黑";
+			}
+			#all
+			{
+				padding: 0;
+			}
+			#all header
+			{
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				background-color: #333;
+			}
+			#all header span
+			{
+				color: white;
+				letter-spacing: 1rem;
+			}
+			#all header img
+			{
+				width: 2rem;
+				margin: 1rem;
+				 filter:invert(1);
+			}
+			.user_img
+			{
+				height: 10rem;
+				background-color: #5A5659;
+				position: relative;
+			}
+			#contain_user
+			{
+				border: 3px solid white;
+				position: absolute;
+				width: 5rem;
+				height: 5rem;
+				border-radius: 50%;
+				/*overflow: hidden;*/
+				/*background-position: ;*/
+				background-size: 190%;
+				background-position: 100%;
+				background-repeat: no-repeat;
+				background-image: url(我的信息图标/31311-106.jpg);
+				bottom: -1rem;
+				left: calc(50% - 2.5rem);
+			}
+			.order
+			{
+				display: flex;
+				justify-content: space-around;
+			}
+			/*.order a
+			{
+				display: inline-block
+				width: 6rem;
+			}*/
+			.order_message
+			{
+				margin-top: 2rem;
+				height: 8rem;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-around;
+				align-items: center;
+				border-bottom: 1px solid #333;
+				width: 6rem;
+			}.order_message img
+			{
+				width: 3rem;
+			}
+			.content_option
+			{
+				margin-top: 3rem;
+			}
+			.content_option ul li
+			{
+				height: 3rem;
+				/*background-color: floralwhite;*/
+				margin-bottom: 1rem;
+				line-height: 3rem;
+			}
+			.content_option ul li a
+			{
+				margin-left: 3rem;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<section class="col-lg-4 col-xs-12 content_part" id="all">
+			<header>
+				<a href="小米商城.html">
+					<img src="我的信息图标/左箭头 (1).png" alt="" />
+				</a>
+				<span>我的信息</span>
+				<a href="小米商城-搜索.html">
+					<img src="我的信息图标/放大镜.png"/>
+				</a>
+			</header>
+			
+			<section class="user_img">
+				<div id="contain_user">
+					<!--<img src="我的信息图标/31311-106.jpg"/>-->
+				</div>
+			</section>
+			
+			<section class="order">
+				<a href="#" class ="order_message">
+					<img src="我的信息图标/全部订单.png"/>
+					<p>全部订单</p>
+				</a>
+				<a href="#" class ="order_message">
+					<img src="我的信息图标/支付.png"/>
+					<p>代收款</p>
+				</a>
+				<a href="#" class ="order_message">
+					<img src="我的信息图标/待收货.png"/>
+					<p>待收货</p>
+				</a>
+			</section>
+			
+			<section class="content_option">
+				<ul class="list-unstyled">
+					<li><a href="#">我的优惠</a></li>
+					<li><a href="#">F码通道</a></li>
+					<li><a href="#">我的服务</a></li>
+					<li><a href="#">设置</a></li>
+				</ul>
+			</section>
+		</section>
+
+		<script src="框架/js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="框架/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE = edge">
+		<meta name="viewport" content="width = device-width, intial-scale = 1, maximum-scale = 1, user-scalable = none">
+		<meta name="author" content="Weldon">
+		<title>小米商城</title>
+		<!--<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">-->
+			<link rel="stylesheet" type="text/css" href="框架/css/bootstrap.min.css"/>
+		<style type="text/css">
+			html
+			{
+				font-size: 75%;
+			}
+			body {
+				margin: 0;
+				
+			}
+			
+			.all .form-group {
+				margin-bottom: 1rem;
+				margin-top: 1rem;
+				padding: 0;
+			}
+			.all img
+			{
+				width: 100%;
+			}
+			.first
+			{
+				margin: 0;
+			}
+			.all
+			{
+				background-color: white;
+				/*padding: 0;*/
+			}
+			.nav_part
+			{
+				display: flex;
+				justify-content: space-between;
+			}
+			.nav_part > a
+			{
+				display: inline-block;
+				margin-top: 0.5rem;
+				width: calc(100% / 3 - 0.5rem);
+			}
+			.nav_part img
+			{
+				width: 100%;
+			}
+			.content>ul
+			{
+				display: flex;
+				flex-direction: column;
+			}
+			.content ul li a
+			{
+				display: flex;
+				justify-content:space-around;
+				background-color: white;
+				margin-top: 0.5rem;
+			}
+			.content_image
+			{
+				width: 30%;
+				height: auto;
+				display: flex;
+				align-items: center;
+				position: relative;
+			}
+			.content_image img:nth-of-type(1)
+			{
+				width: 100%;
+				/*background-color: red;*/
+			}
+			.content_image img:nth-of-type(2)
+			{
+				position: absolute;
+				right: 0;
+				width: 50%;
+			}
+			.content h2
+			{
+				font-size: 1.3rem;
+			}
+			.content h3
+			{
+				color: gray;
+				font-size: 1rem;
+			}
+			.content p
+			{
+				color: red;
+				font-size: 1rem;
+				font-weight: bold;
+			}
+			.search_nav
+			{
+				display: flex;
+				padding: 0;
+				align-items: center;
+				/*position: relative;*/
+				
+			}
+			.search_nav img
+			{
+				/*font-size: 0.5rem;*/
+				width: 2rem;
+				/*position: absolute;*/
+				top: 30%;
+				left: 1%;
+			}
+			
+			.search_nav input
+			{
+				margin-right: 1rem;
+			}
+			a
+			{
+				transition: 1s;
+			}
+			a:hover
+			{
+				color: orange;
+			}
+			@media only screen and (max-width: 1000px) {
+				html
+				{
+					font-size: 60%;
+				}
+				
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<section class="col-lg-4 col-xs-12 all">
+			<header>
+				<form action="" class="form-group search_nav">
+						
+						<input id="search" type="search" class="form-control" placeholder="搜索商品名称" />
+						<a href="小米商城-搜索.html"><img src="我的信息图标/放大镜.png"/></a>
+				</form>
+			</header>
+
+			<!--设置了轮播-->
+			<div id="first" class="carousel slide">
+				<!--轮播指标-->
+				<ol class="carousel-indicators">
+					<li data-target='#first' data-slide-to='0' class="active"></li>
+					<li data-target='#first' data-slide-to='1'></li>
+					<li data-target='#first' data-slide-to='2'></li>
+					<li data-target='#first' data-slide-to='3'></li>
+					<li data-target='#first' data-slide-to='4'></li>
+				</ol>
+
+				<!--轮播项目-->
+				<div class="carousel-inner">
+					<div class="item active">
+						<a href="小米手机5尊享版.html"><img src="小米项目/image/lbt0.jpg" /></a>
+					</div>
+
+					<div class="item">
+						<a href="小米手机5尊享版.html"><img src="小米项目/image/lbt1.jpg" /></a>
+
+					</div>
+
+					<div class="item">
+						<a href="小米手机5尊享版.html"><img src="小米项目/image/lbt2.jpg" /></a>
+					</div>
+
+					<div class="item">
+						<a href="小米手机5尊享版.html"><img src="小米项目/image/lbt3.jpg" /></a>
+					</div>
+
+					<div class="item">
+						<a href="小米手机5尊享版.html"><img src="小米项目/image/lbt4.jpg" /></a>
+					</div>
+				</div>
+
+				<!--
+						controls 控制
+					-->
+				<a href="#first" class="carousel-control left" data-slide='prev'>
+					<span class="glyphicon glyphicon-chevron-left"></span>
+				</a>
+
+				<a href="#first" class="carousel-control right" data-slide='next'>
+					<span class="glyphicon glyphicon-chevron-right"></span>
+				</a>
+			</div>
+			
+			<nav class="nav_part">
+				<a href="小米note2.html">
+					
+					<img src="小米项目/image/cx0.jpg"/>
+				</a>
+				<a href="小米手机5尊享版.html">
+					
+					<img src="小米项目/image/cx1.jpg"/>
+				</a>
+				<a href="小米手机5尊享版.html">
+					
+					<img src="小米项目/image/cx2.jpg"/>
+				</a>
+			</nav>
+			
+			<ariticle class = 'content'>
+				<ul class="list-unstyled">
+					<li>
+						<a href="小米手机5尊享版.html">
+							<div class="content_image">
+								<img src="小米项目/Max.png"/>
+							</div>
+							<div class="right_text">
+								<h2>小米Max全网通</h2>
+								<h3>6.44大屏幕全尺寸/4850mAh大电量?指纹识别/2.5D玻璃</h3>
+								<p>1299元起</p>
+							</div>
+						</a>
+					</li>
+					 
+					<li>
+						<a  href="小米手机5尊享版.html">
+							<div class="content_image">
+								<img src="小米项目/xiaomiMix.jpg"/>
+								<img src="小米项目/image/xp.png"/>
+							</div>
+							<div class="right_text">
+								<h2>小米Max</h2>
+								<h3>6.4全面屏/4400mAh大电量/陶瓷声学系统/超声波距离感应</h3>
+								<p>3499元起</p>
+							</div>
+						</a>
+					</li>
+					
+					<li>
+						<a  href="小米手机5尊享版.html">
+							<div class="content_image">
+								<img src="小米项目/qumian.jpg"/>
+								<img src="小米项目/image/xp.png"/>
+							</div>
+							<div class="right_text">
+								<h2>小米Note2</h2>
+								<h3>6.4全面屏/3D曲面玻璃/骁龙821性能版/2256万超高像素</h3>
+								<p>2799元起</p>
+							</div>
+						</a>
+					</li>
+					
+					<li>
+						<a  href="小米手机5尊享版.html">
+							<div class="content_image">
+								<img src="小米项目/bianxing.jpg"/>
+							</div>
+							<div class="right_text">
+								<h2>变形金刚特别版声波</h2>
+								<h3>小米变形之宝，为中国粉丝量身定制，小米平板即将变形</h3>
+								<p>169元起</p>
+							</div>
+						</a>
+					</li>
+					
+					<li>
+						<a  href="小米手机5尊享版.html">
+							<div class="content_image">
+								<img src="小米项目/dianshi3s.jpg"/>
+							</div>
+							<div class="right_text">
+								<h2>小米电视3s 65英寸 曲面</h2>
+								<h3>小米变形之宝，为中国粉丝量身定制，小米平板即将变形</h3>
+								<p>169元起</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</ariticle>
+
+		</section>
+		<!--<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+		<script src="框架/js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="框架/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

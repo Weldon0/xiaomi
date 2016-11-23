@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>iframe解决页面重复</title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body{
+                height: 100%;
+                display: flex;
+                flex-direction: row;
+            }
+            section{
+                width:200px;
+                height: 100%; 
+            }
+            a{
+                display: block;
+                margin-bottom: 20px;
+            }
+            iframe{
+                height: 100%;
+                width: calc(100% - 200px);
+            }
+
+        </style>
+    </head>
+    <body>
+        <!--重复部分-->
+        <section>
+            <a href="http://lol.qq.com" target="right">LOL官网</a>
+            <a href="http://lol.qq.com" target="right">LOL官网</a>
+            <a href="http://lol.qq.com" target="right">LOL官网</a>
+            <a href="http://lol.qq.com" target="right">LOL官网</a>
+        </section>
+
+        <!--不重复部分 src 默认的网页-->
+        <iframe src="http://www.baidu.com" frameborder="1" name="right"></iframe>
+
+    </body>
+</html>

@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE = edge">
+		<meta name="viewport" content="width = device-width, intial-scale = 1, maximum-scale = 1, user-scalable = none">
+		<meta name="author" content="Weldon">
+		<title>小米5</title>
+		<link rel="stylesheet" type="text/css" href="框架/css/bootstrap.min.css" />
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+			
+			#all {
+				padding: 0;
+				padding-bottom: 6rem;
+			}
+			
+			#all>header {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				background-color: #333;
+				height: 4rem;
+			}
+			
+			#all>header a {
+				color: white;
+				letter-spacing: 1rem;
+			}
+			
+			#all header img {
+				width: 2rem;
+				margin: 1rem;
+				filter: invert(1);
+			}
+			.fixed
+			{
+				/*width: 100%;*/
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				background-color: #333;
+				height: 5.5rem;
+			}
+			.fixed img
+			{
+				width: 3rem;
+				margin: 1rem;
+				filter:invert(1);
+			}
+			.fixed button
+			{
+				width: 60%;
+				height: 80%;
+				background-color: #FD7673;
+				border: none;
+				border-radius: 5px;
+				color: lightgray;
+			}
+			.banner {
+				width: 100%;
+			}
+			
+			.title {
+				padding: 1rem;
+			}
+			
+			.title h2 {
+				font-size: 2rem;
+			}
+			
+			#red_color {
+				color: red;
+			}
+			
+			.title a {
+				display: inline-block;
+				color: lightgray;
+				font-weight: lighter;
+				padding: 0.3rem 1rem 0.3rem 1rem;
+				margin: 0.5rem;
+			}
+			
+			.title a:hover,
+			.orange {
+				border: 1px solid orange;
+			}
+			
+			.introduce {
+				background-color: whitesmoke;
+				padding-bottom: 1rem;
+			}
+			
+			.introduce h3 {
+				padding: 1rem;
+				font-size: 1rem;
+				color: gray;
+			}
+			
+			.car_image {
+				display: flex;
+			}
+			
+			.car_image a {
+				width: 40%;
+				margin: 1rem;
+				/*background-color: red;*/
+			}
+			
+			.car_image img {
+				width: 50%;
+				/*height: 50%;*/
+			}
+			
+			article>header {
+				padding-bottom: 0.1px;
+			}
+			
+			article>header>ul {
+				width: 100%;
+				display: flex;
+				/*background-color: red;*/
+				/*justify-content: space-around*/
+			}
+			
+			article>header>ul>li {
+				/*margin: 1rem;*/
+				border-left: 1px solid antiquewhite;
+				width: 20%;
+			}
+			
+			article>header>ul>li a {
+				/*background-color: red;*/
+				/*border: 1px solid black;*/
+				text-align: center;
+				/*width: 100%;*/
+			}
+			
+			.detail h1 {
+				margin-top: 8rem;
+				text-align: center;
+				letter-spacing: 0.5rem;
+				color: darkslategray;
+			}
+			
+			.gray_font {
+				color: darkgray;
+				padding: 0.5rem 2rem 0.5rem 2rem;
+				text-align: center;
+				font-size: 1.5rem;
+			}
+			
+			.mi5_image {
+				width: 100%;
+			}
+			
+			.red_font {
+				color: red;
+				text-align: center;
+			}
+			
+			.h2_center {
+				text-align: center;
+				font-size: 3rem;
+			}
+			
+			.content_font {
+				padding: 1rem;
+				color: slategray;
+				/*font-size: 0.8rem;*/
+			}
+			
+			.icon {
+				background-image: url(小米手机5资源/f-17.png);
+				background-size: 300% auto;
+				height: 4rem;
+				width: 4rem;
+				/*border: 1px solid black;*/
+			}
+			
+			.cpu li:nth-of-type(2) div {
+				background-position: 0 5.5%;
+			}
+			
+			.cpu li:nth-of-type(3) div {
+				background-position: 0 10.5%;
+			}
+			
+			.cpu li:nth-of-type(4) div {
+				background-position: 0 15.5%;
+			}
+			
+			.cpu li:nth-of-type(5) div {
+				background-position: 0 20.5%;
+			}
+			
+			.cpu li:nth-of-type(6) div {
+				background-position: 0 25.5%;
+			}
+			
+			.cpu li:nth-of-type(7) div {
+				background-position: 0 29.5%;
+			}
+			
+			.cpu li:nth-of-type(8) div {
+				background-position: 0 34.5%;
+			}
+			
+			.cpu li:nth-of-type(9) div {
+				background-position: 0 38.5%;
+			}
+			
+			.cpu li:nth-of-type(10) div {
+				background-position: 0 43.5%;
+			}
+			
+			.cpu li:nth-of-type(11) div {
+				background-position: 0 49.5%;
+			}
+			
+			.cpu li:nth-of-type(12) div {
+				background-position: 0 54.1%;
+			}
+			
+			.cpu {
+				display: flex;
+				flex-wrap: wrap;
+				/*border: 1px solid white;*/
+			}
+			
+			.cpu li {
+				padding-top: 1rem;
+				width: calc(100% /3);
+				border-top: 0.5px solid lightgray;
+				border-left: 0.5px solid lightgray;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-around;
+				align-items: center;
+			}
+			
+			.border_topNone {
+				/*border-top: 1px solid white;*/
+				/*background-color: red;*/
+				border: none;
+			}
+			
+			.border_leftNone {
+				border-left: none;
+				/*background-color: yellow;*/
+			}
+			
+			.cpu p {
+				font-size: 1rem;
+				/*background-color: red;*/
+				color: darkgray;
+				margin-top: 1rem;
+			}
+			
+			.detai_message {
+				margin-top: 1rem;
+			}
+			
+			.cpu_option {
+				color: dimgray;
+				font-size: 2rem;
+				margin-left: 3rem;
+			}
+			
+			.cpu_detail {
+				margin: 3rem;
+				color: dimgray;
+			}
+			
+			.game_image {
+				/*padding:3rem;*/
+				/*margin-right: 3rem;*/
+				/*height: 20rem;*/
+				width: 100%;
+				display: flex;
+				/*background-image: url(小米手机5资源/f-24.jpg);*/
+			}
+			
+			.left_part {
+				/*margin: 3rem;*/
+				width: 50%;
+				height: 100%;
+				background-image: url(小米手机5资源/f-24.jpg);
+				background-size: 100% 100%;
+				padding: 0.1px;
+				position: relative;
+				/*background-color: red;*/
+			}
+			
+			.left_part p {
+				margin: 0;
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				width: 50%;
+				height: 50%;
+				background-color: floralwhite;
+				color: slategray;
+				font-size: 2rem;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			
+			.right_image {
+				width: 50%;
+				height: 100%;
+				display: flex;
+				flex-wrap: wrap;
+			}
+			
+			.cok_image {
+				width: 50%;
+				height: 50%;
+				background-image: url(小米手机5资源/f-25.jpg);
+				background-size: 100% 100%;
+			}
+			
+			.cok_font,
+			.panda_font {
+				width: 50%;
+				height: 50%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				text-align: center;
+				background-color: dimgray;
+				color: navajowhite;
+				font-weight: bold;
+				font-size: 1.5rem;
+				margin: 0;
+			}
+			
+			.panda_image {
+				width: 50%;
+				height: 50%;
+				background-image: url(小米手机5资源/f-26.jpg);
+				background-size: 100% 100%;
+			}
+			
+			.rom {
+				background-image: url(小米手机5资源/f-18.jpg);
+				width: 100%;
+				/*height: 50rem;*/
+				background-size: 150% 100%;
+				padding-top: 0.1px;
+				background-position: 20% center;
+			}
+			
+			.font_part {
+				/*height: 100%;*/
+				/*background-color: red;*/
+				width: 60%;
+				margin-top: 20%;
+				margin-left: 8%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+			
+			.font_part * {
+				color: darkgray;
+			}
+			
+			.font_part h2.rom_font {
+				font-size: 2rem;
+				color: whitesmoke;
+				text-align: left;
+				/*background-color: red;*/
+				width: 100%;
+			}
+			
+			.font_part h4.rom_detail {
+				width: 100%;
+				font-size: 1.5rem;
+				color: whitesmoke;
+			}
+			
+			.rom_bold {
+				width: 100%;
+				font-weight: bold;
+				color: ghostwhite;
+			}
+			
+			.emmc {
+				width: 50%;
+				border-bottom: 2px solid darkgray;
+				display: flex;
+				justify-content: space-between;
+				margin-left: 8%;
+				margin-bottom: 1rem;
+			}
+			
+			.ufs {
+				width: 80%;
+				border-bottom: 2px solid darkorange;
+				display: flex;
+				justify-content: space-between;
+				margin-left: 8%;
+				margin-bottom: 2rem;
+			}
+			
+			.rom_bottom {
+				background-color: #2E2E2E;
+				color: whitesmoke;
+				padding-bottom: 2rem;
+			}
+			
+			.rom_bottom span {
+				line-height: 200%;
+				color: gray;
+			}
+			
+			.rom_footer {
+				/*margin-left: 8%;*/
+				color: gray;
+				font-size: 0.8rem;
+				text-align: center;
+			}
+			
+			.has_padding {
+				padding: 8%;
+			}
+			
+			.device_title {
+				font-size: 3rem;
+				color: dimgray;
+			}
+			
+			.device_page {
+				color: gray;
+			}
+			
+			.device_part {
+				width: 100%;
+			}
+			
+			.device_ul {
+				display: flex;
+				justify-content: space-between;
+			}
+			
+			.device_ul li {
+				text-align: center;
+				color: dimgray;
+				font-size: 1rem;
+			}
+			.screen .device_ul
+			{
+				justify-content: space-around;
+			}
+			.screen .device_ul li h4
+			{
+				font-size: 2.5rem;
+			}
+			.screen .device_ul li span
+			{
+				font-size: 2rem;
+			}
+			.cell_icon
+			{
+				margin-top: 5rem;
+				width: 30%;
+				background-color: whitesmoke;
+				border-radius: 50%;
+				background-image: url(小米手机5资源/f-17.png);
+				background-size: 143% auto;
+				background-position: -50% 62.5%;
+				font-size: 50%;
+			}
+			.cell_ele
+			{
+				background-position: -50% 70%;
+			}
+			.cell .rom_font, .cell .rom_detail
+			{
+				color: dimgray;
+				/*font-size: 2rem;*/
+			}
+			.cell .rom_font
+			{
+				font-size: 2rem;
+			}
+			.cellphone
+			{
+				width: 100%;
+			}
+			.cellphone_detail
+			{
+				color: darkgray;
+				padding-left: 5rem;
+				padding-right: 5rem;
+			}
+			.cellphone_title
+			{
+				color: whitesmoke;
+				padding-left: 5rem;
+				padding-top: 5rem;
+				font-size: 2rem;
+			}
+			.cellphone
+			{
+				background-image: url(小米手机5资源/f-19.jpg);
+				background-size: auto 100%;
+				background-position: 50% 0;
+				padding-bottom: 30rem;
+				
+			}
+			.phone_title
+			{
+				color: dimgray;
+				font-size: 2.5rem;
+			}
+			.phone_detail
+			{
+				color: dimgray;
+			}
+			.img_top
+			{
+				margin-top: 3rem;
+			}
+			@media only screen and (max-width: 1000px) {
+				html {
+					font-size: 50%;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<section class="col-lg-4 col-xs-12 content_part" id="all">
+			<section class="col-lg-4 col-xs-12 navbar-fixed-bottom fixed">
+				<a href="">
+					<img src="我的信息图标/回到首页.png" alt="" />
+				</a>
+				<button type="submit">立即购买</button>
+				<a href="小米商城-购物车.html">
+					<img src="我的信息图标/购物车.png"/>
+				</a>
+			</section>
+			<header>
+				<a href="小米商城.html">
+					<img src="我的信息图标/左箭头 (1).png" alt="" />
+				</a>
+				<!--<span>我的信息</span>-->
+				<a href="小米商城-搜索.html">
+					<img src="我的信息图标/放大镜.png" />
+				</a>
+			</header>
+			<img class="banner" src="小米手机5资源/h-21.jpg" />
+
+			<section class="title">
+				<h2>小米5标准版32GB 3D玻璃 金色32GB</h2>
+				<span id="red_color">
+					1599元
+				</span>
+				<div id="color">
+					<a href="#" class="orange">金色</a>
+					<a href="#">白色</a>
+				</div>
+				<a href="#" class="orange">32GB</a>
+			</section>
+
+			<section class="introduce">
+				<h3>为您推荐</h3>
+				<section class="car_image">
+					<a href="#"><img src="小米手机5资源/h-0524.png" /></a>
+					<a href="#"><img src="小米手机5资源/h-21.png" /></a>
+					<a href="#"><img src="小米手机5资源/h-21.png"></a>
+					<a href="#"><img src="小米手机5资源/h-22.png"></a>
+				</section>
+			</section>
+
+			<article>
+				<header>
+					<ul class="nav list-unstyled navbar-header">
+						<li style="border-left: none;">
+							<a href="#">概述</a>
+						</li>
+						<li>
+							<a href="#">图集</a>
+						</li>
+						<li>
+							<a href="#">评论</a>
+						</li>
+						<li>
+							<a href="#">参数</a>
+						</li>
+						<li>
+							<a href="#">保险</a>
+						</li>
+					</ul>
+				</header>
+
+				<section class="detail">
+					<h1>小米手机5</h1>
+					<p class="gray_font">骁龙820处理器，最大可选 4GB 内存 + 128GB 闪存 4 轴防抖相机，3D陶瓷 / 玻璃机身 支持手机分身，能刷公交卡、银行卡 </p>
+					<p class="red_font">新增支持双开微信，能刷公交卡银行卡</p>
+					<img class="mi5_image" src="小米手机5资源/h-12.jpg" />
+					<p class="gray_font">*页面所介绍配置因版本不同有所差异，具体请参照具体参数页</p>
+
+					<h2 class="h2_center">十余项黑科技	从快到"狠"快</h2>
+					<p class="gray_font">
+						对科技的探索，让我们不断刷新快的纪录。快 100% 的处理器、快 87% 的闪存、新一代网络技术 4G+ ， 还有更稳定的相机、更鲜艳、通透的省电高亮屏幕，通过众多黑科技的探索，使小米5 不仅更快，更是快得有点狠。感谢伟大的新科技， 让每一天都超越想象，前所未有。
+					</p>
+					<img class="mi5_image" src="小米手机5资源/f-3.jpg" />
+					<ul class="list-unstyled cpu">
+						<li class="border_topNone border_leftNone">
+							<div class="icon"></div>
+							<p>骁龙 820 4GB+128GB</p>
+						</li>
+						<li class="border_topNone">
+							<div class="icon"></div>
+							<p>UFS 2.0 闪存</p>
+						</li class="border_topNone">
+						<li>
+							<div class="icon"></div>
+							<p>4 轴防抖相机</p>
+						</li>
+						<li class="border_leftNone">
+							<div class="icon"></div>
+							<p>4G+ 网络</p>
+						</li>
+						<li>
+							<div class="icon"></div>
+							<p>16颗灯 省电高亮屏幕</p>
+						</li>
+						<li>
+							<div class="icon"></div>
+							<p>快充 3.0</p>
+						</li>
+						<li class="border_leftNone">
+							<div class="icon"></div>
+							<p>全功能 NFC</p>
+						</li>
+						<li>
+							<div class="icon"></div>
+							<p>DTI 画质增强</p>
+						</li>
+						<li>
+							<div class="icon"></div>
+							<p>全网通3.0</p>
+						</li>
+						<li class="border_leftNone">
+							<div class="icon"></div>
+							<p>U3D 陶瓷机身</p>
+						</li>
+						<li>
+							<div class="icon"></div>
+							<p>美颜视频电话</p>
+						</li>
+						<li>
+							<div class="icon"></div>
+							<p>离线一键换机</p>
+						</li>
+					</ul>
+
+					<section class="game">
+						<h2 class="cpu_option">有一种速度叫做"骁龙820"</h2>
+						<p class="cpu_detail"> 有一种速度叫“骁龙820” 不是任何处理器都会被小米手机选择，它不仅要性能出色，还要方方面面显著提升。 全新骁龙 820 正符合小米5 的严苛要求，跨代式的改进体现在它的每个方面。
+						</p>
+						<p class="cpu_detail">全新的 Kryo CPU 在单核性能上达到高通新标准，较上一代处理器 CPU 性能提升一倍之多。 高通首次采用的 14nm 制程，从精密的工艺上带来更低功耗，再引入“低功率岛”技术，以超低电量负责传感器等任务，获得更出色的电量控制。
+						</p>
+						<p class="cpu_detail">升级的不只性能与功耗，更快的图像处理器、更动听的音频模块、先进的指令集，我们能将其称之为“黑科技”， 正因其在方方面面的改进，最终让你使用小米5，获得更快的使用体验。
+						</p>
+						<img class="banner" src="小米手机5资源/f-5.jpg" />
+
+						<h2 class="cpu_option">Adreno 530 图形处理器，是手机也是游戏机</h2>
+						<p class="cpu_detail">当你进入游戏世界，1% 的提升都可能彻底改变排名。 那么小米5 提升了多少：40%！</p>
+						<p class="cpu_detail">它配备的 Adreno 530 图形引擎，相比上一代性能提升 40%，这体现在游戏中每一秒的画面更加流畅，赛车时每一个过弯的快速反应，枪战中每一个动作都能积极响应。</p>
+						<p class="cpu_detail">要速度也要画面，从此手机和专业游戏机不必再分得那么清。它支持更新的游戏特效，你未必了解 OpenGL ES3.1、Vulkan 和 OpenCL 2.0 Full 技术，但是你却能体会到，它与桌面级显卡相同的特效标准带来的丰富效果。小米5 又多一个爱不释手的理由，除了好手感，还有沉浸游戏的超快感。</p>
+
+						<section class="game_image" id="game_image">
+							<div class="left_part">
+								<p>未来之战</p>
+							</div>
+							<div class="right_image">
+
+								<div class="cok_image"></div>
+								<p class="cok_font">cok <br />列王的纷争</p>
+								<p class="panda_font">太极熊猫2</p>
+								<div class="panda_image"></div>
+							</div>
+						</section>
+					</section>
+
+					<section class="rom_introduce">
+						<section class="rom">
+							<section class="font_part">
+								<h2 class="rom_font">内存和闪存，速度与激情 </h2>
+								<h4 class="rom_detail">提升87%！UFS 2.0 闪存科技的未来 </h4>
+								<p class="rom_part">处理器快了，闪存性能必须得跟上。技术专家一直在探索更快的闪存，当苦于 eMMC 闪存提升有限，新一代 UFS 闪存技术出现了。它革新存储方式，速度大幅提升，比这一代 eMMC 5.0 技术提速 87%。 </p>
+								<p class="rom_part">使用了配备 UFS 存储的小米5，你会有直观的感受，游戏加载、打开应用、浏览照片，都比现在快很多。 </p>
+								<p class="rom_bold">提速至更快，LPDDR4 双通道技术 </p>
+								<p class="rom_part">LPDDR4 新一代内存，主频最高提速至1866MHz 。采用双通道技术，数据带宽更宽，手机响应速度更加及时。 </p>
+							</section>
+						</section>
+
+						<section class="rom_bottom">
+							<div class="emmc">
+								<span>eMMC 5.0</span>
+								<span>240MB/s</span>
+							</div>
+							<div class="ufs">
+								<span>UFS 2.0</span>
+								<span>450MB/s</span>
+							</div>
+							<p class="rom_footer">eMMC 5.0为小米Note 顶配版实测数据、UFS 2.0为小米5 实测数据</p>
+						</section>
+
+					</section>
+
+				</section>
+			</article>
+			<section class="has_padding">
+				<div class="device_part">
+					<h2 class="device_title">4轴光学防抖相机</br>每个环节的画质保证</h2>
+					<p class="device_page">好照片，源自相机每个环节的创新：镜头由蓝宝石玻璃进行保护，感光元件选用索尼新一代 IMX298，标配多项画质增强技术，现在又新增了 DTI 技术。</p>
+					<p class="device_page">这些专业摄影师的设备要求，小米5 已标配，你拍下的画面表现都有了新高度。层层创新，最突出的当属 4 轴光学防抖技术，它通过检测 8 个方向的抖动，实时移动相机模组进行修正，你也许不必了解这一系列的复杂技术，但使用小米5 进行拍照时，你就会发现很少将照片拍虚了。 </p>
+
+				</div>
+				<ul class="list-unstyled device_ul">
+					<li>
+						<h4>4轴</h4>
+						<span>光学防抖</span>
+					</li>
+					<li>
+						<h4>16MP</h4>
+						<span>索尼 IMX298 相机</span>
+					</li>
+					<li>
+						<h4>DTI </h4>
+						<span>画质增强 </span>
+					</li>
+					<li>
+						<h4>蓝宝石</h4>
+						<span>玻璃保护镜片 </span>
+					</li>
+				</ul>
+				<img class="banner" src="小米手机5资源/f-27.jpg" />
+
+				<section class="screen">
+					<h2 class="device_title">要鲜艳也要夺<br>16颗灯 5.15" 省电高亮度屏幕 </h2>
+					<p class="device_page">当你看到小米5 屏幕显示更通透，色彩更丰富，黑色更深邃，这一定是它背后的 6 种显示技术带来的效果改善。</p>
+					<p class="device_page">例如色彩鲜艳度与亮度，在设计时很难兼得。通过对屏幕深度定制，采用 16 颗 LED 灯技术，最终得到了 95%NTSC 的高色彩饱和度，和远超上一代旗舰手机小米4 屏幕 30% 的亮度。</p>
+					<p class="device_page">在使用时，你会感觉到屏幕更加通透明亮，阳光下也看得更加清楚。 </p>
+					<ul class="list-unstyled device_ul">
+						<li>
+							<h4>95% NTSC</h4>
+							<span>高色彩饱和度</span>
+						</li>
+						<li>
+							<h4>600nit</h4>
+							<span>屏幕亮度</span>
+						</li>
+					</ul>
+					<img class="banner" src="小米手机5资源/f-10.jpg"/>
+				</section>
+				
+				<section class="cell">
+					<div class="cell_icon"></div>
+					<h2 class="rom_font">3000mAh 大电量</br>
+						8天超长待机 </h2>
+						<p class="rom_detail">续航是系统级工程，所以在设计之初，功耗就是我们始终考虑的问题。3000mAh 大容量电池为续航打下良好基础，同时在处理器、屏幕与操作系统中都引入诸多低功耗技术，这就是小米5 性能提升，功耗反而降低的秘密。 </p>
+					<div class="cell_icon cell_ele"></div>
+					<h2 class="rom_font">快充 3.0<br>
+						充电 10 分钟，微信 4小时</h2>
+					<p class="rom_detail">如果有一种技术能减少焦虑，那就是 Quick Charge 快充。小米5 采用高通最新 Quick Charge 3.0，相比小米Note 顶配版充电速度提高 20%。手机没电不必焦虑了，用补妆的时间充上电，就能再聊 4 小时微信，看上 2 部电影。 </p>
+				</section>
+				
+				
+			</section>
+			
+			<section class="cellphone">
+					<div class="cellphone_font">
+						<h2 class="cellphone_title">3D陶瓷机身<br>科技与艺术的浑然天成 </h2>
+						<p class="cellphone_detail">陶瓷这种材质，往往让我们联想到艺术品，它也是小米5 尊享版所采用的后盖材质。</p>
+						<p class="cellphone_detail">1500℃ 高温煅烧，经复杂的流延成型工艺，令陶瓷后盖均匀平整，“明如镜，颜如玉” ，科技与艺术在这里浑然天成。
+							如果你爱玻璃手感，尊享版也为你准备了3D曲面玻璃机身。  </p>
+					</div>
+			</section>
+			
+			<section class="has_padding">
+				<section class="nfc">
+					<h2 class="phone_title">全功能 NFC</h2>
+					<span class="phone_detail">小米5 标配全功能 NFC，支持读卡、写卡、卡模拟，以及 P2P 模式。成功绑定公交卡后，手机就是你的公交卡，上车只需刷刷手机。更方便的是，你可以随时为公交卡充值，无需窗口排长队，动动手指充值完成。今后坐公交、搭地铁，不用再翻各种卡，拿出小米5 一次搞定。 </span>
+					<img class="banner img_top" src="小米手机5资源/f-28-new.jpg"/>
+				</section>
+				
+				<section class="mobil_network">
+					
+				</section>
+			</section>
+
+		</section>
+
+		<script src="框架/js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="框架/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var img = document.getElementById('game_image');
+			var cell = document.getElementsByClassName('cell_icon')[0];
+			var cell_icon = document.getElementsByClassName('cell_icon')[1];
+			img.style.height = img.offsetWidth / 2 + 'px';
+			cell.style.height = cell.offsetWidth + 'px';
+			cell_icon.style.height = cell_icon.offsetWidth + 'px';
+		</script>
+	</body>
+
+</html>

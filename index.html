@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE = edge">
+		<meta name="viewport" content="width = device-width, intial-scale = 1, maximum-scale = 1, user-scalable = none">
+		<meta name="author" content="Weldon">
+		<title>导航</title>
+		<link rel="stylesheet" type="text/css" href="框架/css/bootstrap.min.css"/>
+		<style type="text/css">
+			*
+			{
+				box-sizing: border-box;
+			}
+			body
+			{
+				margin: 0;
+				height: 100%;
+				padding-bottom:5rem;
+				
+			}
+			html
+			{
+				height: 100%;
+			}
+			#all{
+				padding: 0;
+				margin: 0;
+			}
+			section
+			{
+				/*background-color: yellow;*/
+			}
+			#nav_fixed
+			{
+				/*background-color: red;*/
+				margin: 0;
+				padding: 0;
+				height: 5rem;
+			}
+			.nav_fixed ul li a
+			{
+				/*height: 20rem;*/
+				display: flex;
+				flex-direction: column;
+				justify-content: space-around;
+				align-items: center;
+				height: 100%;
+				/*margin-bottom: 1rem;*/
+			}
+			.nav_fixed ul li a span
+			{
+				/*line-height: 150%;*/
+				font-size: 0.8rem;
+			}
+			.nav_fixed ul li
+			{
+				width: 100%;
+				/*background-color: red;*/
+			}
+			.nav_fixed ul
+			{
+				margin: 0;
+				/*margin-left: 1rem;*/
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+			}
+			iframe
+			{
+				height: 100%;
+			}
+			.content_part
+			{
+				height: 100%;
+				display:flex;
+				padding: 0;
+			}
+			span
+			{
+				display: inline-block;
+			}
+			.all
+			{
+				padding: 0;
+			}
+			.nav_img img
+			{
+				width: 1.5rem;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		
+		
+		
+		<section class="col-lg-4 col-xs-12 content_part" id="all">
+			<iframe src="小米商城.html" width="100%" height="100%" name="html_page"></iframe>
+			
+			
+				<nav class="col-lg-4 col-xs-12 navbar navbar-fixed-bottom nav_fixed" id="nav_fixed">
+					<!--<div>-->
+						<ul class="nav navbar-nav">
+							<li class="active">
+								<a href="小米商城.html" target="html_page">
+									<span class="nav_img">
+										<img src="我的信息图标/回到首页.png"/>
+									</span>
+									<span>首页</span>
+								</a>
+							</li>
+							<li>
+								<a href="小米商城-分类.html" target="html_page">
+									<span class="nav_img">
+										<img src="我的信息图标/分类 (1).png"/>
+									</span>
+									<span >分类</span>
+								</a>
+							</li>
+							
+							<li>
+								<a href="小米商城-购物车.html" target="html_page">
+									<span  class="nav_img">
+										<img src="我的信息图标/购物车.png"/>
+									</span>
+									<span >购物车</span>
+								</a>
+							</li>
+							
+							<li>
+								<a href="小米商城-我的.html" target="html_page">
+									<span  class="nav_img">
+										<img src="我的信息图标/个人中心.png"/>
+									</span>
+									<span >我的</span>
+								</a>
+							</li>
+							
+						</ul>
+					<!--</div>-->
+				</nav>
+			
+	
+		</section>
+
+		<script src="框架/js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="框架/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	</body>
